@@ -87,7 +87,7 @@ O modelo final foi salvo utilizando `joblib`, permitindo reutilização futura s
 
 ```python
 import joblib
-joblib.dump(model, 'models/random_forest_model.pkl')
+joblib.dump(model, 'Scripts/random_forest_model.pkl')
 ```
 
 ---
