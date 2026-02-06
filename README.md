@@ -39,8 +39,6 @@ As principais etapas de pré-processamento incluem:
 
   * **Idade**: imputação pela mediana
   * **Embarked**: imputação pelo valor mais frequente
-* Codificação de variáveis categóricas
-
 
 ---
 
@@ -48,9 +46,9 @@ As principais etapas de pré-processamento incluem:
 
 Foram criadas novas features para melhorar o desempenho do modelo:
 
-* **Family**: indica se o passageiro viajava sozinho ou com família
-* **Cabin_filled**: Indica se a cabine está vazia
-* **Title**: título extraído do nome (Mr, Mrs, Rare, etc.)
+* **Family**: Indica se o passageiro viajava sozinho ou com família
+* **Cabin_filled**: Indica se possuia cabine definida.
+* **Title**: Título extraído do nome (Mr, Mrs, Rare, etc.)
 
 ---
 
@@ -79,6 +77,7 @@ O modelo alcançou aproximadamente:
 * **ROC AUC**: ~0.77
 
 Esses resultados mostram um bom equilíbrio entre viés e variância para o problema proposto.
+Valor obtido na submissão no Kaggle: 0.77751
 
 ---
 
@@ -110,7 +109,7 @@ pip install -r requirements.txt
 3. Execute o script principal ou notebook:
 
 ```bash
-python src/model.py
+python Scripts/RandomForestClassifierModel_v2.py
 ```
 
 ---
@@ -119,15 +118,13 @@ python src/model.py
 
 * Ajuste fino de hiperparâmetros com GridSearchCV
 * Testar outros algoritmos (XGBoost, Gradient Boosting)
-* Deploy do modelo com Flask ou Streamlit
-* Criação de API para inferência
 
 ---
 
 ## 👤 Autor
 
 **Natanael Barboza**
-Projeto desenvolvido para estudos e portfólio em **Ciência de Dados e Machine Learning**.
+Projeto desenvolvido para estudos em **Ciência de Dados e Machine Learning**.
 
 ---
 
